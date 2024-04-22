@@ -3,12 +3,46 @@ html {
   margin: 0;
   padding: 0;
   background-color: #000;
+  font-family: HblveticaNeue;
+}
+
+@font-face {
+  font-family: 'hn';
+  src: url('../type/hn500.otf');
+
+}
+
+@font-face {
+  font-family: 'hn400';
+  src: url('../type/hn400.otf');
+
+}
+
+@font-face {
+  font-family: 'hn-bold';
+  src:
+    url('../type/hn700.otf');
+
+}
+
+@font-face {
+  font-family: 'hn-i';
+  src:
+    url('../type/hn500i.otf');
+
 }
 
 .header {
   position: fixed;
   mix-blend-mode: difference;
-  width: 100%;
+  width: 98%;
+  top: -10px;
+  left: 50%;
+  /* Position it horizontally in the middle of the viewport */
+  transform: translate(-50%, 0);
+  /* Center it perfectly */
+  z-index: 999;
+  /* Ensure it's above other content */
 }
 
 .container {
@@ -24,6 +58,7 @@ html {
   overflow-y: auto;
   /* Enable vertical scrolling */
 
+  padding-bottom: 200px;
 
 }
 
@@ -33,13 +68,7 @@ html {
   background-color: #fff;
 }
 
-.content {
-  font-size: 16px;
-  /* Set font size */
-  line-height: 1.6;
-  /* Set line height */
-  background-color: #fff;
-}
+
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .column-wrapper::-webkit-scrollbar {
@@ -47,9 +76,75 @@ html {
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
-.content {
+.column-wrapper {
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
+}
+
+.clearification {
+  font-family: hn;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 120px;
+  margin-left: 40%;
+  width: 55%;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.italic {
+  font-family: hn-i;
+}
+
+.paragraph {
+  font-family: hn;
+  font-size: 32px;
+  margin-left: 15%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  text-indent: 80px;
+}
+
+.title {
+  font-family: hn-bold;
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 15%;
+  margin-bottom: 50px;
+}
+
+.body-begin,
+.body {
+  font-family: hn;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-right: 15%;
+  margin-bottom: 50px;
+}
+
+.body {
+  text-indent: 15%;
+}
+
+.illu {
+  width: 100%;
+}
+
+.capt01 {
+  text-align: right;
+  font-family: hn400;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 70px;
+  color: #838383;
+
+}
+
+.works-img {
+  width: 100%;
 }
