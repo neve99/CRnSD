@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* Set default font family */
+  background-color: red;
+}
+
+.container {
+  position: fixed;
+  /* Fix the container to the viewport */
+  top: 50%;
+  /* Position it vertically in the middle of the viewport */
+  left: 50%;
+  /* Position it horizontally in the middle of the viewport */
+  transform: translate(-50%, -50%);
+  /* Center it perfectly */
+  z-index: 999;
+  /* Ensure it's above other content */
+  mix-blend-mode: difference;
+}
+
+.inverted-text {
+  font-size: 48px;
+  /* Set font size as needed */
+  color: white;
+  font-weight: 700;
+  /* Set initial text color */
+  mix-blend-mode: difference;
+  /* Set blend mode to 'difference' */
+}
+
+.para {
+  text-align: center;
+  color: black;
+  background-color: #fff;
+  font-size: 30px;
+}
