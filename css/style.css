@@ -2,7 +2,7 @@ body,
 html {
   margin: 0;
   padding: 0;
-  background-color: #000;
+  background-color: #fff;
   font-family: HblveticaNeue;
 }
 
@@ -32,7 +32,7 @@ html {
 
 }
 
-.header {
+.header-img {
   position: fixed;
   mix-blend-mode: difference;
   width: 98%;
@@ -45,11 +45,20 @@ html {
   /* Ensure it's above other content */
 }
 
+.grid {
+  position: fixed;
+  right: 8.8%;
+  top: 35%;
+  z-index: 0.5;
+  width: 33%;
+}
+
 .container {
   display: flex;
   /* Use flexbox for layout */
   height: 100vh;
   /* Set container height to full viewport height */
+  z-index: 100;
 }
 
 .column-wrapper {
@@ -58,14 +67,15 @@ html {
   overflow-y: auto;
   /* Enable vertical scrolling */
 
-  padding-bottom: 200px;
+  padding-bottom: 100px;
+  z-index: 200;
 
 }
 
 .column {
   padding: 20px;
   /* Add padding for content */
-  background-color: #fff;
+
 }
 
 
@@ -131,6 +141,15 @@ html {
   text-indent: 15%;
 }
 
+.disclaimer {
+  font-family: hn;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-right: 15%;
+  margin-bottom: 50px;
+}
+
 .illu {
   width: 100%;
 }
@@ -147,4 +166,46 @@ html {
 
 .works-img {
   width: 100%;
+  margin-bottom: 80px;
+}
+
+.footer {
+  mix-blend-mode: difference;
+  z-index: 999;
+}
+
+.school,
+.name {
+  position: fixed;
+  font-family: hn;
+  font-weight: 500;
+  font-size: 16px;
+  mix-blend-mode: difference;
+  color: #fff;
+  z-index: 999;
+
+}
+
+.school {
+  left: 50%;
+  bottom: 2%;
+}
+
+.name {
+  right: 2%;
+  bottom: 2%;
+}
+
+@media (max-width: 750px) {
+  .container {
+    display: block;
+  }
+
+  .grid {
+    display: none;
+  }
+
+  .header-img {
+    top: 0;
+  }
 }
