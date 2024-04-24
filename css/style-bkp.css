@@ -33,11 +33,9 @@ html {
 }
 
 
-.header-img-1,
-.header-img-2 {
-
+.header-img {
   position: fixed;
-
+  mix-blend-mode: difference;
   width: 98%;
   top: -10px;
   left: 50%;
@@ -47,36 +45,6 @@ html {
   z-index: 999;
   /* Ensure it's above other content */
   /* filter: drop-shadow(0 0 2px #1b5e20) ; */
-  display: flex;
-}
-
-.header-img-2 {
-  mix-blend-mode: difference;
-}
-
-
-.himg1 {
-  width: 100%;
-  flex: 646;
-
-}
-
-.himg2 {
-  width: 100%;
-  flex: 845;
-
-}
-
-.svg1,
-.svg2 {
-  width: 100%;
-}
-
-.svg1 {
-  filter:
-    drop-shadow(0 0 6px #fff) drop-shadow(0 0 3px #fff) drop-shadow(0 0 2px #fff);
-  /* Secondary shadow with larger blur radius */
-
 
 }
 
@@ -240,8 +208,7 @@ html {
     display: none;
   }
 
-  .header-img-1,
-  .header-img-2 {
+  .header-img {
     top: 0;
   }
 }
