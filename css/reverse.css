@@ -32,7 +32,7 @@ body {
 }
 
 .shadow-text {
-  font-size: 48px;
+  font-size: 100px;
   /* Set font size as needed */
   color: black;
   font-weight: 700;
@@ -40,7 +40,7 @@ body {
 }
 
 .inverted-text {
-  font-size: 48px;
+  font-size: 100px;
   /* Set font size as needed */
   color: white;
   font-weight: 700;
